@@ -1,0 +1,95 @@
+.ImgDiv {
+  /* background-color: #fff; */
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  transition: all 0.2s;
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .ImgDiv {
+    display: none;
+  }
+}
+
+.ImgDiv.shrink {
+  background-color: #0480ef;
+}
+
+.ImgDiv:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ImgDiv:hover .DroppedMenu,
+.ImgDiv:focus .DroppedMenu {
+  display: flex;
+  border-top-right-radius: 0;
+}
+
+.DroppedMenu {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #ccc;
+  width: 150px;
+  font-size: 14px;
+  font-weight: normal;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.DroppedMenuLink {
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  /* padding-left: 15px; */
+  transition: all 0.2s;
+}
+.DroppedMenuLink:-webkit-any-link {
+  /* color: unset; */
+}
+
+.nav__item {
+  /* font-size: 20px; */
+  transition: all 0.2s;
+  /* color: rgb(255, 255, 255); */
+  /* text-decoration: none; */
+}
+
+.nav__item.activeLink {
+  color: #d8dbb5;
+  text-decoration: none;
+}
+
+.DroppedMenuLanguage {
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+  /* padding-left: 15px; */
+  transition: all 0.2s;
+}
+
+.DroppedMenuLink:hover {
+  background-color: #b6b5b5;
+}
+
+.DMSeparatorLine {
+  color: transparent;
+  display: block;
+  height: 0.5px;
+  background-color: #000;
+  width: 60%;
+  padding-left: 15px;
+}

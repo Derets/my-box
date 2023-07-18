@@ -1,0 +1,18 @@
+.typingAnimation {
+    font-size: 24px;
+    font-family: sans-serif;
+  }
+  
+  .cursor {
+    animation: blinkCursor 0.7s infinite;
+  }
+  
+  @keyframes blinkCursor {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

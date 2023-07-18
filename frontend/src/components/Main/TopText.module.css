@@ -1,0 +1,89 @@
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.TopText {
+  background-color: #000000;
+  padding: 100px 0;
+}
+
+.TopTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+  gap: 30px;
+  color: #fff;
+}
+
+.TopTextTitle {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.TopTextText {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  width: 50%;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.TopTextStats {
+  display: flex;
+  gap: 50px;
+}
+
+.TopTextStats span {
+  font-size: 32px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.TopTextStats h4 {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .TopTextTitle {
+    font-size: 36px;
+  }
+  .TopTextText {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .TopTextTitle {
+    font-size: 24px;
+  }
+  .TopTextText {
+    width: 100%;
+    font-size: 16px;
+  }
+  .TopTextStats {
+    gap: 20px;
+  }
+  .TopTextStats span {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #fff;
+  }
+  .TopTextStats h4 {
+    font-family: "Space Mono", monospace;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+  }
+}

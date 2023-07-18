@@ -1,0 +1,69 @@
+.Ovals {
+  background-color: #000;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.OvalsContent {
+  /* background-color: #fff; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Oval1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75%;
+}
+.Oval2 {
+  z-index: 5;
+  height: 10%;
+  transition: all 0.2s;
+}
+
+.Oval2:hover {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Oval1 {
+    height: 50%;
+  }
+  .Oval2 {
+    height: 10%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .Ovals {
+    height: 90vh;
+  }
+  .Oval1 {
+    height: 30%;
+  }
+  .Oval2 {
+    height: 5%;
+  }
+}

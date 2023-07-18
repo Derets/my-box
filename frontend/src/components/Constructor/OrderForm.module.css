@@ -1,0 +1,179 @@
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.OrderForm {
+  /* background-color: #aaa8a8; */
+  font-size: 14px;
+  font-family: inherit;
+  color: #212121;
+}
+.FormBlocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.FormBlock {
+  /* background-color: #9e9e9e; */
+  width: 400px;
+  padding: 20px;
+}
+.FormBlock h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.FormBlock label {
+}
+
+label.Error {
+  color: red;
+}
+label.Error input {
+  border: 1px solid red;
+}
+
+.FormBlock input {
+  width: 326px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+  background-color: #fff;
+}
+
+.FormBlock textarea {
+  resize: none;
+  width: 360px;
+  height: 100px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  margin-bottom: 0px;
+  transition: all 0.2s;
+  /* background-color: #1778f2; */
+  /* background-color: transparent; */
+  background-color: #fff;
+}
+
+.FormBlock input::placeholder,
+.FormBlock textarea::placeholder {
+  opacity: 0.7;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.FormBlock input:focus,
+.FormBlock textarea:focus {
+  outline: none;
+  border-color: #1778f2;
+}
+
+.errorMessage {
+}
+.errorMessage p {
+  color: red;
+}
+
+.formSubmitButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formSubmitButton button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  color: #fff;
+  background-color: #212121;
+  border: none;
+  width: 170px;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin: 12px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.formSubmitButton button:hover {
+  background-color: #313131;
+}
+.formSubmitButton button:disabled {
+  background-color: #a5a5a5;
+  cursor: default;
+}
+
+.loadingInfo {
+  color: grey;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .FormBlocks {
+    /* width: 250px; */
+    background-color: transparent;
+  }
+  .FormBlock {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0;
+  }
+  .FormBlocks {
+    width: 90%;
+    background-color: transparent;
+  }
+  .FormBlock {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .FormBlock input {
+    /* font-size: 12px; */
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+    background-color: #fff;
+  }
+  .FormBlock textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    margin-bottom: 0px;
+    margin: 0 auto;
+    transition: all 0.2s;
+    /* background-color: #1778f2; */
+    /* background-color: transparent; */
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,177 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.TypesSection {
+  background-color: #000000;
+}
+
+.TypesContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.TypesContent h2 {
+  align-items: center;
+  font-size: 32px;
+  color: #ccc;
+}
+
+.sliderContainer {
+  /* height: 200px; */
+  width: 100%;
+  /* background-color: #3d4650; */
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.VariantsSection {
+  display: flex;
+  justify-content: center;
+}
+
+.Variants {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+}
+
+.Variant {
+  width: 27%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.Variant:nth-child(1) {
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.Variant:nth-child(2) {
+  /* border-top-left-radius: 50%; */
+}
+.Variant:nth-child(3) {
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.Variant:nth-child(4) {
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.Variant:nth-child(5) {
+  border-radius: 50%;
+}
+.Variant:nth-child(6) {
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.VariantContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s;
+  background-color: rgba(19, 0, 186, 0.4);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+
+.TypesContent h2 {
+  font-size: 32px;
+  margin: 40px 0;
+  color: #fff;
+}
+
+.Variant:hover {
+  cursor: pointer;
+}
+
+.Variant:hover .VariantContent {
+  opacity: 1;
+}
+.VariantContent.activeType {
+  opacity: 1;
+  background-color: rgba(19, 0, 186, 0.8);
+}
+.Variant img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.VariantTitle {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .TypesContent h2 {
+    font-size: 26px;
+  }
+  .wrapper {
+    padding: 0;
+  }
+  .Variant {
+    width: 27%;
+    height: 200px;
+    width: 200px;
+  }
+  .VariantTitle {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .Variant {
+    width: 27%;
+    height: 140px;
+    width: 140px;
+  }
+  .VariantTitle {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

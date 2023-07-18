@@ -1,0 +1,166 @@
+.WelcomeSection {
+  position: relative;
+  height: 100vh;
+  background-color: #2d5cae;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0px;
+  color: #172463;
+  line-height: 78px;
+  transition: all 1s ease-out;
+  flex-direction: row;
+}
+
+.WelcomeContent {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  transition: all 1s ease-out;
+  position: relative;
+}
+.ModelTop {
+  height: inherit;
+  width: 60%;
+  height: 80%;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+
+.CanvasTop {
+  background-color: transparent;
+  transition: all 1s ease-out;
+  width: 0;
+  height: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.title {
+  opacity: 0;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  white-space: nowrap;
+  transition: all 1s ease-out;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.redSpan {
+  color: #d73826;
+}
+
+span {
+  transition: all 2s ease-in-out;
+}
+
+@keyframes textAnimationIncrease {
+  0% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 64px;
+    opacity: 1;
+  }
+}
+.textAnimationIncrease {
+  animation: textAnimationIncrease 0.5s ease-out forwards;
+}
+
+@media only screen and (max-width: 1024px) {
+  @keyframes textAnimationIncrease {
+    0% {
+      font-size: 0px;
+    }
+    100% {
+      font-size: 48px;
+      opacity: 1;
+    }
+  }
+  .ModelTop {
+    margin-top: 300px;
+    height: inherit;
+    width: 100%;
+    height: 60%;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-out;
+    opacity: 0;
+  }
+
+  .title {
+    margin-top: -100px;
+    padding: 0;
+    height: 200px;
+    width: fit-content;
+  }
+  .title span {
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+  .title {
+    margin-top: -100px;
+    white-space: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    height: 150px;
+  }
+  .title span {
+    /* width: 100%; */
+    width: 200px;
+    font-size: 32px;
+    line-height: 1.1;
+  }
+  .ModelTop {
+    margin-top: 300px;
+    height: inherit;
+    width: 70%;
+    height: 60%;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-out;
+    opacity: 0;
+  }
+  .WelcomeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

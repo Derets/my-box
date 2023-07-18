@@ -1,0 +1,546 @@
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.SettingsSection {
+  background-color: #000000;
+  /* height: 1000px; */
+  color: #fff;
+  padding-top: 100px;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.SettingsContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.Settings {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.SettingsSizes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #ccc;   */
+}
+
+.Sizes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Size {
+  font-size: 16px;
+  background-color: #2a62c3;
+  margin: 3px;
+  padding: 1px 5px;
+  border-radius: 10px;
+  border: 1px solid #434343;
+  /* max-width: 25%; */
+  width: 25%;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+
+.Size:hover {
+  background: #d1d1d1;
+  cursor: pointer;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  /* background: transparent; */
+  cursor: pointer;
+  width: 15rem;
+  margin: 15px;
+}
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -10px; /* Centers thumb on the track */
+  background-color: #5cd5eb;
+  height: 20px;
+  width: 10px;
+  border-radius: 25%;
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem;
+}
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #053a5f;
+  height: 0.3rem;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #053a5f;
+  height: 0.9rem;
+}
+
+.Ranges {
+  /* background-color: #acacac; */
+  /* margin-top: 30px; */
+  width: 80%;
+  color: #fff;
+}
+.inputRange {
+  background-color: #fff;
+  margin: 5px;
+}
+
+.Range {
+  display: flex;
+  flex-direction: column;
+}
+
+.RangeTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.RangeButtons {
+  display: flex;
+  gap: 15px;
+}
+.RangeButtons span {
+  text-align: center;
+  background-color: #b99661;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  transition: all 0.2s;
+}
+
+.RangeButtons span:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.Model {
+  width: 60%;
+  height: 100vh;
+  position: sticky;
+  top: 60px;
+  bottom: 1000px;
+  transition: all 0.2s ease-out;
+  z-index: 1;
+  /* background-color: #fff; */
+}
+
+.ModelInsider {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-out;
+  position: relative;
+  background-color: #000;
+}
+
+.InsiderSetter {
+  /* background-color: #0d8200; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0;
+  z-index: 2;
+}
+
+.InsiderBackgroungColor {
+  /* background-color: #ccc; */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.InsiderBackgroungColor span {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  /* color: transparent; */
+  border-radius: 50%;
+  border: 2px solid rgb(209, 209, 209);
+  transition: all 0.2s ease-out;
+}
+
+.InsiderBackgroungColor span:nth-child(2) {
+  background-color: #000;
+}
+.InsiderBackgroungColor span:nth-child(3) {
+  background-color: #3f3973;
+}
+.InsiderBackgroungColor span:nth-child(4) {
+  background-color: #014439;
+}
+
+.InsiderBackgroungColor span:hover,
+.InsiderRotation:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.InsiderTitle {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.InsiderRotation {
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+
+.RotationDisabled.InsiderRotation::after {
+  opacity: 1;
+}
+.InsiderRotation::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 140%;
+  height: 3px;
+  top: 12px;
+  left: -5px;
+  background-color: #fff;
+  z-index: 3;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-out;
+  border-radius: 3px;
+}
+
+.Canvas {
+  background-color: #07112d;
+}
+.Canvas:hover {
+  cursor: pointer;
+}
+
+.Colors {
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Colors h4 {
+  margin-top: 30px;
+}
+
+.ColorsType {
+  /* background-color: #333; */
+}
+
+.TypeTitle {
+  color: #2a62c3;
+  text-align: center;
+}
+
+.Palette {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 50px;
+  padding: 10px 0 30px;
+  gap: 15px;
+  border-top: 2px solid #2a62c3;
+  /* border-bottom: 2px solid #2a62c3; */
+}
+
+.PaletteColor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+.Palette span {
+  color: transparent;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid rgb(194, 194, 194);
+  transition: all 0.2s;
+}
+
+.Palette span:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.Palette .activeColor {
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 0;
+}
+
+.SettingsTable {
+  background-color: #373737;
+  border-radius: 10px;
+  border: 1px solid #777777;
+  /* height: 100px; */
+  /* width: 90%; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+  margin-bottom: 20px;
+}
+
+.DiscountTableColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: normal;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.DiscountTableColumn {
+  padding: 5px 0;
+  width: 70px;
+  text-align: center;
+}
+.DiscountTableColumn:nth-child(1) {
+  border-left: none;
+  width: 130px;
+}
+.DiscountTableColumn div:nth-child(1) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.DiscountTableColumn div {
+  width: 100%;
+}
+
+.DiscountTableColumn:hover {
+  background-color: #b99661;
+}
+.DiscountTitle,
+.activeDiscount {
+  background-color: #b99661;
+}
+
+.SettingsAmount,
+.SettingsPrice {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff; */
+  width: 80%;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.SettingsPrice span {
+  color: #0d8200;
+}
+
+.OrderButton {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  all: unset;
+  background-color: #0d8200;
+  padding: 5px 20px;
+  border-radius: 4px;
+  /* font-weight: bold; */
+  margin: 10px auto;
+}
+
+.OrderButton:hover {
+  background-color: #0f9900;
+  cursor: pointer;
+}
+button.SaveButton:hover {
+  cursor: pointer;
+  background-color: #0f9900;
+}
+
+button.SaveButton {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  all: unset;
+  background-color: #0d8200;
+  padding: 5px 20px;
+  border-radius: 4px;
+  /* font-weight: bold; */
+  margin-right: 10px;
+  color: #fff;
+  max-height: 50px;
+}
+.EditButtons {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1300px) {
+  .Model {
+    width: 50%;
+  }
+  .Settings {
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .SettingsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Model {
+    width: 100%;
+    height: 50vh;
+    position: sticky;
+    top: 60px;
+    bottom: 1000px;
+    transition: all 0.2s ease-out;
+    border-bottom: 1px solid #ccc;
+    /* background-color: #fff; */
+  }
+  .InsiderSetter {
+    /* background-color: #0d8200; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0;
+    z-index: 2;
+  }
+  .Settings {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .Ranges {
+    /* background-color: #acacac; */
+    /* margin-top: 30px; */
+    width: 100%;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .SettingsTable {
+    background-color: #373737;
+    border-radius: 10px;
+    border: 1px solid #777777;
+    /* height: 100px; */
+    /* width: 90%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    margin-bottom: 20px;
+  }
+
+  .DiscountTableColumn {
+    /* margin: 5px 0; */
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    flex-direction: row;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .DiscountTableColumn:nth-child(1) {
+    border: none;
+    width: 150px;
+  }
+  .DiscountTableColumn div:nth-child(1) {
+    border: none;
+  }
+  .Palette {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .SettingsAmount,
+  .SettingsPrice {
+    display: flex;
+    align-items: center;
+    /* background-color: #fff; */
+    width: 100%;
+    margin: 10px auto;
+    justify-content: space-between;
+  }
+  .InsiderTitle {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .InsiderBackgroungColor span {
+    width: 20px;
+    height: 20px;
+  }
+  .InsiderBackgroungColor {
+    /* background-color: #ccc; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+  }
+  .Size {
+    font-size: 14px;
+    background-color: #2a62c3;
+    margin: 3px;
+    padding: 1px 5px;
+    border-radius: 10px;
+    border: 1px solid #434343;
+    /* max-width: 25%; */
+    width: 40%;
+    text-align: center;
+    transition: all 0.2s ease-out;
+  }
+  .RangeTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    /* background: transparent; */
+    cursor: pointer;
+    width: 90%;
+    margin: 15px;
+  }
+}

@@ -1,0 +1,114 @@
+.orderCardSceleton {
+  height: 170px;
+  margin: 20px 0;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #c1c1c1;
+  padding: 15px 25px;
+  /* overflow: hidden; */
+  line-height: 1.3;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 50%, 95%);
+  }
+}
+
+.orderCardSceletonInfo {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  flex-direction: start;
+  height: 100%;
+  gap: 10px;
+}
+
+.orderCardSceletonStatus {
+  width: 50px;
+  height: 20px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 5px;
+}
+.orderCardSceletonBasicLine {
+  width: 150px;
+  height: 20px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 5px;
+}
+.orderCardSceletonSmallLine {
+  width: 100px;
+  height: 20px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 5px;
+}
+.orderCardSceletonLargeLine {
+  width: 200px;
+  height: 20px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 5px;
+}
+
+.orderCardSceletonDescription {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.OBcontentModel {
+  width: 200px;
+  height: 120px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .orderCardSceleton {
+    height: fit-content;
+    margin: 20px;
+    width: fit-content;
+    background-color: #ccc;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .OBcontent {
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #fff;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .OBcontentModel {
+    order: 3;
+  }
+
+  .orderCardSceletonDescription {
+    width: 100%;
+    order: 1;
+  }
+}

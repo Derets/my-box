@@ -1,0 +1,244 @@
+.Gallery {
+  background-color: #000000;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.GalleryContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.GalleryText {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 70px 0 50px;
+  color: #a6e1fa;
+}
+.GalleryText span {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+}
+
+.GalleryPhotos {
+  display: flex;
+  /* gap: 20px; */
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.GalleryPhoto1,
+.GalleryPhoto2,
+.GalleryPhoto3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  /* background-color: #fff; */
+  overflow: hidden;
+  background-image: url("../../assets/BGImgs/BG4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  margin: 20px 0;
+}
+.GalleryPhoto2 {
+  width: 48%;
+  background-image: url("../../assets/BGImgs/BGI1.jpg");
+}
+
+.GalleryPhoto3 {
+  width: 48%;
+  background-image: url("../../assets/BGImgs/BGI2.jpg");
+}
+
+.GalleryImg {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transition: all 0.2s;
+}
+.GalleryImg:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
+}
+
+.GallerySpan1 {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 46%;
+  height: 50%;
+  background: #000;
+  border-top-right-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(20, 20, 20),
+    rgb(40, 40, 40)
+  );
+}
+
+.GallerySpan2 {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 46%;
+  height: 50%;
+  background: #000;
+  border-top-left-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(30, 30, 30),
+    rgb(50, 50, 50)
+  );
+}
+
+.GallerySpan3 {
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+  width: 46%;
+  height: 50%;
+  background: #000;
+  border-bottom-left-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(30, 30, 30),
+    rgb(50, 50, 50)
+  );
+}
+
+.GallerySpan4 {
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  width: 46%;
+  height: 50%;
+  background: #000;
+  border-bottom-right-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(40, 40, 40),
+    rgb(60, 60, 60)
+  );
+}
+
+.GallerySpan5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: #000;
+  border-bottom-left-radius: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(20, 20, 20),
+    rgb(40, 40, 40)
+  );
+}
+
+.GallerySpan6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background: #000;
+  border-bottom-right-radius: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(30, 30, 30),
+    rgb(50, 50, 50)
+  );
+}
+
+.GallerySpan7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: #000;
+  border-top-left-radius: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(30, 30, 30),
+    rgb(50, 50, 50)
+  );
+}
+
+.GallerySpan8 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background: #000;
+  border-top-right-radius: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(40, 40, 40),
+    rgb(60, 60, 60)
+  );
+}
+
+@media only screen and (max-width: 1024px) {
+  .GalleryText {
+    font-size: 32px;
+    margin: 40px 0 20px;
+  }
+  .GalleryPhoto1,
+  .GalleryPhoto2,
+  .GalleryPhoto3 {
+    height: 250px;
+    border-radius: 40px;
+  }
+  .GalleryImg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transition: all 0.2s;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .GalleryText {
+    font-size: 24px;
+    margin: 20px 0 10px;
+  }
+  .GalleryPhoto1,
+  .GalleryPhoto2,
+  .GalleryPhoto3 {
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .GalleryImg {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: all 0.2s;
+  }
+}

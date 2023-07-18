@@ -1,0 +1,23 @@
+.Countdown {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 50vh;
+  padding: 30px;
+}
+
+.Countdown p {
+  text-align: center;
+}
+
+.Countdown a {
+  text-decoration: underline;
+}
+.Countdown a:hover,
+.Countdown a:focus {
+  color: #ccc;
+  cursor: pointer;
+}

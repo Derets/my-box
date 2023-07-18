@@ -1,0 +1,31 @@
+.ModalAuthError {
+  min-width: 25vw;
+}
+
+.ModalAuthError h1 {
+  font-size: 20px;
+  color: rgb(16, 136, 0);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.ModalAuthError p {
+  font-size: 16px;
+  /* color: red; */
+  text-align: left;
+}
+
+.modalBTN {
+  padding: 5px 20px;
+  background-color: #0043b9;
+  width: fit-content;
+  height: fit-content;
+  margin: 20px auto 0px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  color: #fff;
+}
+.modalBTN:hover {
+  cursor: pointer;
+  background-color: #3968b8;
+}

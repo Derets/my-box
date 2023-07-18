@@ -1,0 +1,108 @@
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.MiddleText {
+  background-color: #000000;
+  /* padding: 50px; */
+}
+
+.MiddleTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MiddleTextImg img {
+  width: 100px;
+  margin: 30px;
+}
+
+.MiddleTextTitle {
+  color: #a6e1fa;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 30px;
+}
+
+.MiddleTextDescription {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  text-align: center;
+  width: 50%;
+  color: #a6e1fa;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.MiddleTextButtons {
+  margin: 40px;
+  display: flex;
+  gap: 15px;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+.MiddleTextButtons div {
+  padding: 10px 20px;
+  border-radius: 5px;
+  /* background-color: #fff; */
+  transition: all 0.2s;
+}
+
+.MiddleTextButton1 {
+  background-color: #ffffff;
+}
+.MiddleTextButton2 {
+  background-color: #0a2472;
+  color: #fff;
+}
+
+.MiddleTextButton2 a {
+  color: #fff;
+}
+
+.MiddleTextButtons div:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+  .MiddleTextTitle {
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .MiddleTextDescription {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .MiddleTextTitle {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  .MiddleTextDescription {
+    width: 100%;
+    font-size: 14px;
+  }
+  .MiddleTextImg img {
+    width: 70px;
+    margin: 20px;
+  }
+  .MiddleTextButtons {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}

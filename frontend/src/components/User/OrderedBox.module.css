@@ -1,0 +1,154 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.OBsection {
+  height: fit-content;
+  margin: 20px 0;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.OBcontent.deleted {
+  background-color: #6b6b6b;
+}
+
+.OBcontent {
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #fff;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  padding: 15px 25px;
+  /* overflow: hidden; */
+  line-height: 1.3;
+}
+
+.OBcontentInfo {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #ccc; */
+  /* width: 100%; */
+}
+
+.OBcontentDescription {
+  /* margin-left: -150px; */
+  width: 25%;
+}
+
+.Status {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+.spanCreated {
+  font-size: 12px;
+  background-color: #848484;
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 12px;
+}
+
+.spanDone {
+  font-size: 12px;
+  background-color: #17b917;
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 12px;
+}
+.Date,
+.Check {
+  margin-top: 6px;
+  color: #acacac;
+  font-size: 12px;
+}
+
+.Check span {
+  color: #000;
+}
+
+.DescTitle {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 12px;
+  /* width: 100%; */
+}
+
+.edit,
+.delete {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #acacac;
+}
+
+.edit:hover,
+.delete:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.delete.deleted,
+.edit.deleted {
+  color: #acacac;
+  text-decoration: none;
+}
+.deleted.edit:hover,
+.deleted.delete:hover {
+  cursor: default;
+  color: #acacac;
+}
+
+.OBcontentModel {
+  width: 200px;
+  height: 120px;
+  /* background-color: #7a4b4b; */
+}
+
+@media only screen and (max-width: 1024px) {
+  .OBcontent {
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #fff;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .OBcontentModel {
+    width: 200px;
+    height: 120px;
+    /* background-color: #7a4b4b; */
+    order: 3;
+  }
+  .OBsection {
+    height: fit-content;
+    margin: 20px 0;
+    /* background-color: #7a7a7a; */
+    transition: all 0.2s;
+    /* width: fit-content; */
+  }
+  .OBcontentInfo {
+    order: 2;
+    width: 100%;
+  }
+
+  .OBcontentDescription {
+    /* margin-left: -150px; */
+    width: 100%;
+    order: 1;
+  }
+}

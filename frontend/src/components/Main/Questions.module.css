@@ -1,0 +1,89 @@
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.Questions {
+  background-color: #000000;
+  padding: 100px 0;
+}
+
+.QuestionsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionsTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 48px;
+  line-height: 1.5;
+  color: #a6e1fa;
+  margin-bottom: 50px;
+}
+
+.QuestionBlocks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  color: #fff;
+}
+
+.QuestionBlock {
+  width: 350px;
+}
+
+.Question {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.Answer {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .QuestionsTitle {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .QuestionBlocks {
+    justify-content: space-around;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .QuestionsTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .Question {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .Answer {
+    font-size: 14px;
+  }
+  .QuestionBlock {
+    width: 250px;
+  }
+  .Questions {
+    background-color: #000000;
+    padding: 20px 0;
+  }
+}

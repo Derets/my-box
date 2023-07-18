@@ -1,0 +1,172 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Clever {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../assets/MainPage/Pattern.png");
+}
+
+.CleverContent {
+  /* background-color: #fff; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.CleverFigure {
+  height: 600px;
+  width: 600px;
+  /* background-color: #000; */
+  position: relative;
+}
+
+.CleverFigure > span {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.CleverFigureSpan1 {
+  top: 0;
+  left: 0;
+  border-top-right-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(14, 107, 168),
+    rgb(90, 181, 209)
+  );
+}
+
+.CleverFigureSpan2 {
+  top: 0;
+  right: 0;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(52, 144, 188),
+    rgb(128, 195, 229)
+  );
+}
+
+.CleverFigureSpan3 {
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(52, 144, 188),
+    rgb(128, 195, 229)
+  );
+}
+
+.CleverFigureSpan4 {
+  right: 0;
+  bottom: 0;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(90, 181, 209),
+    rgb(166, 225, 250)
+  );
+  transition: all 0.2s ease-out;
+}
+.CleverFigureSpan4:hover {
+  border-top-right-radius: 0%;
+}
+
+.CleverFigureCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+}
+
+.CleverFigureCenter span {
+  position: absolute;
+  /* background-color: #262626; */
+  width: 50%;
+  height: 50%;
+}
+
+.CleverFigureCenter1 {
+  width: 50%;
+  height: 50%;
+  border-top-right-radius: 50%;
+  margin-right: -10px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(20, 20, 20),
+    rgb(40, 40, 40)
+  );
+}
+
+.CleverFigureCenter2 {
+  top: 0;
+  right: 0;
+  border-top-left-radius: 50%;
+  margin-right: 1px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(30, 30, 30),
+    rgb(50, 50, 50)
+  );
+}
+.CleverFigureCenter3 {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 100%;
+  margin-bottom: 1px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(30, 30, 30),
+    rgb(50, 50, 50)
+  );
+}
+.CleverFigureCenter4 {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 100%;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(40, 40, 40),
+    rgb(60, 60, 60)
+  );
+}
+
+@media only screen and (max-width: 1024px) {
+  .CleverFigure {
+    width: 400px;
+    height: 400px;
+  }
+  .CleverFigureCenter {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .CleverFigure {
+    width: 200px;
+    height: 200px;
+  }
+  .CleverFigureCenter {
+    width: 50px;
+    height: 50px;
+  }
+}

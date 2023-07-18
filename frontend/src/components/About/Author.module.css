@@ -1,0 +1,134 @@
+.AuthorSection {
+  /* background-color: #219ebc; */
+  background: linear-gradient(180deg, #219ebc, #023047);
+  padding: 100px 0;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.AuthorContent {
+  display: flex;
+}
+
+.AuthorInfo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.AuthorImg {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30px;
+}
+.AuthorImg img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.AuthorLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.AuthorLinks img {
+  width: 30px;
+  transition: all 0.2s;
+}
+.AuthorLinks img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.AuthorText {
+  color: aliceblue;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Space Mono", monospace;
+}
+
+.AuthorText p {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+  .AuthorImg {
+    height: 250px;
+    width: 250px;
+  }
+  .AuthorImg img {
+    height: 250px;
+    width: 250px;
+  }
+  .AuthorLinks img {
+    width: 25px;
+  }
+  .AuthorText {
+    font-size: 16px;
+    padding-left: 20px;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .AuthorSection {
+    padding: 50px 0;
+  }
+  .AuthorImg {
+    height: 200px;
+    width: 200px;
+  }
+  .AuthorImg img {
+    height: 200px;
+    width: 200px;
+  }
+  .AuthorLinks img {
+    width: 25px;
+  }
+  .AuthorText {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .AuthorText p {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .AuthorContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .AuthorInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,55 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #000;
+  color: #a6e1fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.FooterContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+  gap: 10px;
+}
+.FooterImg {
+  margin-bottom: 30px;
+}
+
+.FooterLinks {
+  display: flex;
+  gap: 15px;
+  transition: all 0.2s;
+}
+
+.FooterLinks img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.FooterCoop {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+}
+.FooterAuthor {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  /* color: beige; */
+  /* opacity: 0.5; */
+  transition: all 0.2s;
+}
+
+.FooterAuthor a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

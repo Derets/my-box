@@ -8,17 +8,18 @@ The focus is **functionality**, not design.
 
 ## Features
 
+- Interactive **3D models** of gift boxes with many custom settings
 - Language mode toggle (EN/UA)
-- Sending emails during the order, registration, password recovery, or email reconfirmation
+- **Sending emails** during the order, registration, password recovery, or email reconfirmation
 - Saving your orders on the database
-- Admin system
-- Auto-complete personal information from the profile when ordering
+- **Admin system**
+- **Auto-complete** personal information from the profile when ordering
 
 ## Used libraries and frameworks
 
 **Client(8):** React.js, GSAP, React OAuth2 | Google, React Hook Form, React Router, React Three Drei, React Three Fiber, jwt-decode;
 
-**Server(11):** Node.js, Express, Mongoose, JSON Web Token, Nodemon, Nodemailer, Mailgen, Bcrypt.js, Body-parser, Dotenv, Mongoose-unique-validator, Express Validator;
+**Server(12):** Node.js, Express, Mongoose, JSON Web Token, Nodemon, Nodemailer, Mailgen, Bcrypt.js, Body-parser, Dotenv, Mongoose-unique-validator, Express Validator;
 
 **Testing:** Postman;
 
@@ -42,6 +43,7 @@ The implementation of this project from scratch took **less than 5 weeks**.
 
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/0782573f-d48a-48aa-bbf7-2576b6e5ba4d)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/db7f0de0-ba3a-4d3d-929c-f15b76926a74)
+![App Screenshot](https://github.com/Derets/my-box/assets/92890674/eb581120-1e2c-4a37-8306-7cde34b7a1a7)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/4f2b0ad7-ea44-4e60-be84-5210a2debc75)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/57b58a95-9231-48aa-92ad-ac6ad4e1658c)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/3722c895-bb56-42c6-a8d4-a11086b545fd)

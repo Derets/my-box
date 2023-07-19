@@ -15,11 +15,49 @@ The focus is **functionality**, not design.
 - **Admin system**
 - **Auto-complete** personal information from the profile when ordering
 
-## Used libraries and frameworks
+## Libraries and frameworks used in the development process:
 
-**Client(8):** React.js, GSAP, React OAuth2 | Google, React Hook Form, React Router, React Three Drei, React Three Fiber, jwt-decode;
+Client-Side (8):
 
-**Server(12):** Node.js, Express, Mongoose, JSON Web Token, Nodemon, Nodemailer, Mailgen, Bcrypt.js, Body-parser, Dotenv, Mongoose-unique-validator, Express Validator;
+🔸 React.js
+
+🔸 GSAP (GreenSock Animation Platform) for stunning animations.
+
+🔸 React OAuth2 | Google for hassle-free Google authentication.
+
+🔸 React Hook Form for efficient form handling.
+
+🔸 React Router for seamless navigation.
+
+🔸 React Three Drei and React Three Fiber for engaging 3D modeling.
+
+🔸 jwt-decode for handling JSON Web Tokens.
+
+Server-Side (12):
+
+🔹 Node.js for building scalable server applications.
+
+🔹 Express as the web application framework for Node.js.
+
+🔹 Mongoose as the MongoDB object modeling tool.
+
+🔹 JSON Web Token for secure authentication and authorization.
+
+🔹 Nodemon for automatic server restarts during development.
+
+🔹 Nodemailer for sending emails from the server.
+
+🔹 Mailgen for generating stylish and professional email templates.
+
+🔹 Bcrypt.js for secure password hashing.
+
+🔹 Body-parser for parsing incoming request bodies.
+
+🔹 Dotenv for environment variable management.
+
+🔹 Mongoose-unique-validator for validating unique fields in Mongoose schemas.
+
+🔹 Express Validator for server-side form validation.
 
 **Testing:** Postman;
 

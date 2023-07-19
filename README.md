@@ -32,6 +32,8 @@ The implementation of this project from scratch took **less than 5 weeks**.
 
 ## Screenshots
 
+**Desktop:**
+
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/9ef977d3-6276-4a2e-a5ad-4e0bac93d57d)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/3518a747-c610-4253-8cc8-806e925f89ef)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/c99ed111-f686-4766-ad00-ca8e0fc56f38)
@@ -40,6 +42,7 @@ The implementation of this project from scratch took **less than 5 weeks**.
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/69d9ee65-8200-4fd8-825c-206dec06a5a8)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/b902cff2-b621-4e49-a7b4-f0af04972ce2)
 
+**Mobile:**
 
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/0782573f-d48a-48aa-bbf7-2576b6e5ba4d)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/db7f0de0-ba3a-4d3d-929c-f15b76926a74)
@@ -47,6 +50,11 @@ The implementation of this project from scratch took **less than 5 weeks**.
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/4f2b0ad7-ea44-4e60-be84-5210a2debc75)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/57b58a95-9231-48aa-92ad-ac6ad4e1658c)
 ![App Screenshot](https://github.com/Derets/my-box/assets/92890674/3722c895-bb56-42c6-a8d4-a11086b545fd)
+
+**Emails:**
+
+![image](https://github.com/Derets/my-box/assets/92890674/bd1563fd-6f8e-410a-8f1f-d79f48fd8979)
+![image](https://github.com/Derets/my-box/assets/92890674/1f39d414-bf2b-46ca-974b-95e3f4f148a3)
 
 ## Contact
 

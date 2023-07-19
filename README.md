@@ -1,6 +1,6 @@
 # My Box
 
-**MyBox** is a site, a 3D gift box constructor that **everyone** can use at this link: https://my-box-d3a18.web.app/
+**MyBox** is a site, a 3D gift box constructor that **everyone** can use at this link:  <a href="https://my-box-d3a18.web.app/" target="_blank">MyBox</a>
 
 This is my first pet project written in **MERN** stack to show my skills and knowledge in web development.
 

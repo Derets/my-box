@@ -19,45 +19,45 @@ The focus is **functionality**, not design.
 
 Client-Side (8):
 
-🔸 React.js
+🔸 **React.js**
 
-🔸 GSAP (GreenSock Animation Platform) for stunning animations.
+🔸 **GSAP** (GreenSock Animation Platform) for stunning animations.
 
-🔸 React OAuth2 | Google for hassle-free Google authentication.
+🔸 **React OAuth2 | Google** for hassle-free Google authentication.
 
-🔸 React Hook Form for efficient form handling.
+🔸 **React Hook Form** for efficient form handling.
 
-🔸 React Router for seamless navigation.
+🔸 **React Router** for seamless navigation.
 
-🔸 React Three Drei and React Three Fiber for engaging 3D modeling.
+🔸 **React Three Drei** and **React Three Fiber** for engaging 3D modeling.
 
-🔸 jwt-decode for handling JSON Web Tokens.
+🔸 **jwt-decode** for handling JSON Web Tokens.
 
 Server-Side (12):
 
-🔹 Node.js for building scalable server applications.
+🔹 **Node.js** for building scalable server applications.
 
-🔹 Express as the web application framework for Node.js.
+🔹 **Express** as the web application framework for Node.js.
 
-🔹 Mongoose as the MongoDB object modeling tool.
+🔹 **Mongoose** as the MongoDB object modeling tool.
 
-🔹 JSON Web Token for secure authentication and authorization.
+🔹 **JSON Web Token** for secure authentication and authorization.
 
-🔹 Nodemon for automatic server restarts during development.
+🔹 **Nodemon** for automatic server restarts during development.
 
-🔹 Nodemailer for sending emails from the server.
+🔹 **Nodemailer** for sending emails from the server.
 
-🔹 Mailgen for generating stylish and professional email templates.
+🔹 **Mailgen** for generating stylish and professional email templates.
 
-🔹 Bcrypt.js for secure password hashing.
+🔹 **Bcrypt.js** for secure password hashing.
 
-🔹 Body-parser for parsing incoming request bodies.
+🔹 **Body-parser** for parsing incoming request bodies.
 
-🔹 Dotenv for environment variable management.
+🔹 **Dotenv** for environment variable management.
 
-🔹 Mongoose-unique-validator for validating unique fields in Mongoose schemas.
+🔹 **Mongoose-unique-validator** for validating unique fields in Mongoose schemas.
 
-🔹 Express Validator for server-side form validation.
+🔹 **Express Validator** for server-side form validation.
 
 **Testing:** Postman;
 
